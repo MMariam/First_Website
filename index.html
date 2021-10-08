@@ -1,0 +1,115 @@
+<!doctype html>
+
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- TITLE OF THE TAB -->
+  <title>Home</title>
+
+
+  <!-- LINKING TO JS SCRIPT -->
+<!-- 	<script src="animate.js"></script>
+-->	<!-- LINKING TO CSS SOURCE CODE -->
+<link href="style.css" rel="stylesheet">  
+<!-- LINKING TO BOOTSTRAP -->
+<link href="http://s3.amazonaws.com/codecademy-content/courses/ltp2/css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+
+  <!-- WEBPAGE HEADER -->
+  <div class="header">
+   <!-- BOOTSTRAP CONTAINER?!?! -->
+   <div class="container">
+    <!-- NAVIGATION MENU -->
+    <ul class="menu">
+      <li><a href="#" id="dropdown-toggle" >weddings <b class="caret"></b> </a>  </li>
+
+    <li><a href="#">moments </a></li>
+    <li><a href="#">contact</a></li>
+    <li><a href="#">blog</a></li>
+    <li><a href="#">about</a></li>
+  </ul>
+
+       <ul class="menu" id="dropdown-menu" >
+        <li><a href="#">Wedding #1</a></li>
+        <li><a href="#">Wedding #2</a></li>
+        <li><a href="#">Wedding #3</a></li>
+      </ul> 
+
+</div>
+
+</div>
+   <div class="content">
+
+<!-- LOGO -->
+<div class="logo-icon">
+  <img src="logo.png" alt="" width="36%">
+</div>
+
+
+<div class="slide">
+
+	<a href="#"><img src="img/wed1.webp"> </a>
+
+  <a href="#"><img src="img/wed2.webp"> </a>
+
+  <a href="#"><img src="img/wed3.webp"> </a>
+
+  <a href="#"><img src="img/wed4.webp"> </a>
+
+</div>
+
+<div class="footer">
+  <p>copyright © 2015 sarahhryu — all rights reserved	</p>
+</div>
+</div>
+<script>
+
+  function showMeWhatIsBeingClickedOn(){
+
+    document.addEventListener('click', function(e) {
+      e = e || window.event;
+      var target = e.target || e.srcElement,
+      text = target.textContent || target.innerText;  
+      console.log(e.srcElement);
+    }, false);}
+
+  document.getElementById("dropdown-menu").style.visibility="hidden";
+
+
+      document.getElementById("dropdown-toggle").onclick = function () {
+        console.log("hey");
+    if( document.getElementById("dropdown-menu").style.visibility=="hidden"){
+        console.log("hey");
+        console.log(document.getElementById("dropdown-menu").style.visibility);
+        document.getElementById("dropdown-menu").style.visibility="visible";
+//  for(let i=0; i<document.getElementById("dropdown-menu").children.length; i++)
+//    document.getElementById("dropdown-menu").children[i].style.display="block";
+// };
+}
+
+
+else
+{
+          console.log("heyy");
+
+  document.getElementById("dropdown-menu").style.visibility="hidden";
+
+   // for(let i=0; i<document.getElementById("dropdown-menu").children.length; i++)
+   // document.getElementById("dropdown-menu").children[i].style.display="none";
+ }
+}
+
+</script>
+
+ 
+
+</body>
+</html>

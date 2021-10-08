@@ -1,0 +1,129 @@
+/* General */
+
+.container {
+  width: 71.2%;
+  top:0px;
+  left:0px;
+}
+/*#dropdown-menu {
+  font-size: 15px;
+  margin-top: 5px; 
+  min-width: 50px; 
+  font-family: Arial, Helvetica, sans-serif; 
+   color: #898989;
+   letter-spacing: 3px;
+    box-sizing: 35px;  
+    }*/
+
+    #dropdown-menu {
+      display: block;
+      color: #898989;
+      font-weight: 300;
+      width: 50px;
+      letter-spacing: 3px;
+      font-family: Arial, Helvetica, sans-serif; 
+      font-size: 15px;
+      padding: 0px;
+      top: 0px;
+      margin-top: 0;
+    }
+
+
+    #dropdown-menu li{
+      padding-left: 230px;
+      float: left;
+      width: 100%;
+      font-size: 12px;
+
+    }
+
+ #dropdown-menu li a{
+  width: 100px;
+  float: left;
+  text-align: center;
+ }
+
+    .footer{
+      position: absolute;
+      bottom: 0px;
+      left: 600px;
+      font-family: Arial, Helvetica, sans-serif; 
+      letter-spacing: 2px;
+      font-size: 11px;
+      color: #898989;
+      z-index:1001;
+    }
+
+    .slide{
+     position: relative;
+     top: 40px;
+     padding: 15px;
+     padding-bottom: 0px;
+     width: auto;
+     height: auto;
+     overflow-x: scroll;
+     overflow-y: hidden;
+     white-space: nowrap;
+     z-index:1000;
+   }
+
+   .slide img{
+    width: 53.5%;
+    left: -15px;
+  }
+  /* Header */
+
+  .header {
+    font-family:  Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 100%;
+    padding-top: 15px;
+    position: relative;
+    z-index: 1003;
+  }
+
+  /* Menu */ 
+
+  .logo-icon  {
+    position: absolute;
+    left: 5px;
+    top: 0px;
+
+  }
+
+  .header .menu {
+    float: left;
+    left: 150px;
+    list-style: none;
+    margin-top: 5px;
+    margin-right: 5px;
+        text-align: center;
+
+  }
+
+  .menu{
+    top: 15%;
+    width: 100%;
+            text-align: center;
+    left: 350px;
+
+  }
+
+  .menu li, ul {
+    padding-left: 40px;
+    padding-right: 40px;
+    letter-spacing: 3px;
+  }
+
+  .menu li{
+    top: 0px;
+    display: inline-block;
+
+  }
+
+  .menu a {
+    color: #898989;
+  }
+
+  
+
