@@ -40,7 +40,6 @@
  #dropdown-menu li a{
   width: 100px;
   float: left;
-  text-align: center;
  }
 
     .footer{
@@ -97,14 +96,12 @@
     list-style: none;
     margin-top: 5px;
     margin-right: 5px;
-        text-align: center;
 
   }
 
   .menu{
     top: 15%;
     width: 100%;
-            text-align: center;
     left: 350px;
 
   }
