@@ -26,49 +26,54 @@
   <div class="header">
    <!-- BOOTSTRAP CONTAINER?!?! -->
    <div class="container">
+    <!-- LOGO -->
+    <div id="logo-icon">
+      <img src="logo.png" alt="">
+    </div>
     <!-- NAVIGATION MENU -->
     <ul class="menu">
-      <li><a href="#" id="dropdown-toggle" >weddings <b class="caret"></b> </a>  </li>
 
-    <li><a href="#">moments </a></li>
-    <li><a href="#">contact</a></li>
-    <li><a href="#">blog</a></li>
-    <li><a href="#">about</a></li>
-  </ul>
+      <li><a href="#" id="dropdown-toggle" >weddings <b class="caret"></b> </a> 
+        <ul id="dropdown-menu">
+          <li><a href="#">wedding 1</a></li>
+          <li><a href="#">wedding 2</a></li>
+          <li><a href="#">wedding 3</a></li>
+        </ul> 
+      </li>
 
-       <ul class="menu" id="dropdown-menu" >
-        <li><a href="#">Wedding #1</a></li>
-        <li><a href="#">Wedding #2</a></li>
-        <li><a href="#">Wedding #3</a></li>
-      </ul> 
-
-</div>
-
-</div>
-   <div class="content">
-
-<!-- LOGO -->
-<div class="logo-icon">
-  <img src="logo.png" alt="" width="36%">
-</div>
+      <li><a href="#">moments </a></li>
+      <li><a href="#">contact</a></li>
+      <li><a href="#">blog</a></li>
+      <li><a href="#">about</a></li>
+    </ul>
 
 
-<div class="slide">
 
-	<a href="#"><img src="img/wed1.webp"> </a>
-
-  <a href="#"><img src="img/wed2.webp"> </a>
-
-  <a href="#"><img src="img/wed3.webp"> </a>
-
-  <a href="#"><img src="img/wed4.webp"> </a>
+  </div>
 
 </div>
+<div class="content">
 
-<div class="footer">
-  <p>copyright © 2015 sarahhryu — all rights reserved	</p>
+
+
+
+  <div class="slide">
+
+   <a href="#"><img src="img/wed1.webp"> </a>
+
+   <a href="#"><img src="img/wed2.webp"> </a>
+
+   <a href="#"><img src="img/wed3.webp"> </a>
+
+   <a href="#"><img src="img/wed4.webp"> </a>
+
+ </div>
+
+
 </div>
-</div>
+ <footer>
+  <p>copyright © 2015 sarahhryu — all rights reserved </p>
+</footer>
 <script>
 
   function showMeWhatIsBeingClickedOn(){
@@ -80,15 +85,15 @@
       console.log(e.srcElement);
     }, false);}
 
-  document.getElementById("dropdown-menu").style.visibility="hidden";
+    document.getElementById("dropdown-menu").style.display="none";
 
 
-      document.getElementById("dropdown-toggle").onclick = function () {
+    document.getElementById("dropdown-toggle").onclick = function () {
+      console.log("hey");
+      if( document.getElementById("dropdown-menu").style.display=="none"){
         console.log("hey");
-    if( document.getElementById("dropdown-menu").style.visibility=="hidden"){
-        console.log("hey");
-        console.log(document.getElementById("dropdown-menu").style.visibility);
-        document.getElementById("dropdown-menu").style.visibility="visible";
+        console.log(document.getElementById("dropdown-menu").style.display);
+        document.getElementById("dropdown-menu").style.display="block";
 //  for(let i=0; i<document.getElementById("dropdown-menu").children.length; i++)
 //    document.getElementById("dropdown-menu").children[i].style.display="block";
 // };
@@ -97,9 +102,9 @@
 
 else
 {
-          console.log("heyy");
+  console.log("heyy");
 
-  document.getElementById("dropdown-menu").style.visibility="hidden";
+  document.getElementById("dropdown-menu").style.display="none";
 
    // for(let i=0; i<document.getElementById("dropdown-menu").children.length; i++)
    // document.getElementById("dropdown-menu").children[i].style.display="none";
@@ -108,7 +113,7 @@ else
 
 </script>
 
- 
+
 
 </body>
 </html>
