@@ -115,7 +115,7 @@ html, body {
 
     .slide{
      position: relative;
-     
+
      padding: 15px;
      padding-bottom: 0px;
      width: auto;
@@ -139,6 +139,7 @@ html, body {
     width: 100%;
     top: 0px;
     position: fixed;
+    background-color: white;
   }
 
   /* Menu */ 
@@ -148,7 +149,7 @@ html, body {
     left: 0px;
     top: 0px;
     padding-bottom: 1%;
-    
+
   }
 
 
@@ -157,7 +158,7 @@ html, body {
   }
 
   .menu{
-   
+
     width: 100%;
     float: left;
     list-style: none;
