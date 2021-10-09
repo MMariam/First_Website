@@ -1,6 +1,6 @@
 
 @media only screen 
-and (max-width : 999px) {
+and (max-width : 1244px) {
   /* Styles */
   .slide img{
     width: 100%;
@@ -37,7 +37,7 @@ and (max-width : 999px) {
 
 /* Desktops and laptops ----------- */
 @media only screen 
-and (min-width : 1000px) {
+and (min-width : 1245px) {
  .slide img{
   width: 54%;
 }
