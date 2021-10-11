@@ -1,0 +1,147 @@
+<!doctype html>
+
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- TITLE OF THE TAB -->
+  <title>Home</title>
+
+
+  <!-- LINKING TO JS SCRIPT -->
+<!-- 	<script src="animate.js"></script>
+-->	<!-- LINKING TO CSS SOURCE CODE -->
+<link href="style.css" rel="stylesheet"  type="text/css">  
+<!-- LINKING TO BOOTSTRAP -->
+<link href="https://s3.amazonaws.com/codecademy-content/courses/ltp2/css/bootstrap.min.css" rel="stylesheet"> 
+
+<link rel="shortcut icon" type="image/x-icon" href="img/flower.ico" />
+
+</head>
+
+<body>
+
+  <!-- WEBPAGE HEADER -->
+  <div class="header">
+   <!-- BOOTSTRAP CONTAINER?!?! -->
+   <div class="container">
+    <!-- LOGO -->
+    <div id="logo-icon">
+      <a href="index.html"><img src="logo.png" alt=""></a>
+    </div>
+    <!-- NAVIGATION MENU -->
+    <ul class="menu">
+
+      <li><a href="#" id="dropdown-toggle" >weddings <b class="caret"></b> </a> 
+        <ul id="dropdown-menu">
+          <li><a href="#">wedding 1</a></li>
+          <li><a href="#">wedding 2</a></li>
+          <li><a href="#">wedding 3</a></li>
+        </ul> 
+      </li>
+
+      <li><a href="#">moments </a></li>
+      <li><a href="contact.html">contact</a></li>
+<li><a href="https://www.theknot.com" target="_blank">plan</a></li>
+      <li><a href="about.html">about</a></li>
+    </ul>
+
+
+
+  </div>
+
+</div>
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>Some text about who we are and what we do.</p>
+  <p>Resize the browser window to see that this page is responsive by the way.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+
+  <div class="column">
+    <div class="card">
+      <img src="img/kevin2.jpeg" alt="Kevin" style="width:100%">
+      <div class="container">
+        <h2>Kevin Malone</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>kevin@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="column">
+    <div class="card">
+      <img src="img/dwight2.jpeg" alt="Dwight" style="width:100%">
+      <div class="container">
+        <h2>Dwight Schrute</h2>
+        <p class="title">Art Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>dwight@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>  
+
+  <div class="column">
+    <div class="card">
+      <img src="img/stanley.jpeg" alt="Stanley" style="width:100%">
+      <div class="container">
+        <h2>Stanley Hudson</h2>
+        <p class="title">Art Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>stanley@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<footer>
+  <p>copyright © 2015 sarahhryu — all rights reserved </p>
+</footer>
+<script>
+
+  function showMeWhatIsBeingClickedOn(){
+
+    document.addEventListener('click', function(e) {
+      e = e || window.event;
+      var target = e.target || e.srcElement,
+      text = target.textContent || target.innerText;  
+      console.log(e.srcElement);
+    }, false);}
+
+    document.getElementById("dropdown-menu").style.display="none";
+
+
+    document.getElementById("dropdown-toggle").onclick = function () {
+      console.log("hey");
+      if( document.getElementById("dropdown-menu").style.display=="none"){
+        console.log("hey");
+        console.log(document.getElementById("dropdown-menu").style.display);
+        document.getElementById("dropdown-menu").style.display="block";
+}
+
+
+else
+
+  document.getElementById("dropdown-menu").style.display="none";
+
+ 
+}
+
+</script>
+
+
+
+</body>
+</html>

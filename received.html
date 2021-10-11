@@ -1,0 +1,104 @@
+<!doctype html>
+
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- TITLE OF THE TAB -->
+  <title>Home</title>
+
+
+  <!-- LINKING TO JS SCRIPT -->
+<!-- 	<script src="animate.js"></script>
+-->	<!-- LINKING TO CSS SOURCE CODE -->
+<link href="style.css" rel="stylesheet"  type="text/css">  
+<!-- LINKING TO BOOTSTRAP -->
+<link href="https://s3.amazonaws.com/codecademy-content/courses/ltp2/css/bootstrap.min.css" rel="stylesheet"> 
+
+<link rel="shortcut icon" type="image/x-icon" href="img/flower.ico" />
+
+</head>
+
+<body>
+
+  <!-- WEBPAGE HEADER -->
+  <div class="header">
+   <!-- BOOTSTRAP CONTAINER?!?! -->
+   <div class="container">
+    <!-- LOGO -->
+    <div id="logo-icon">
+      <a href="index.html"><img src="logo.png" alt=""></a>
+    </div>
+    <!-- NAVIGATION MENU -->
+    <ul class="menu">
+
+      <li><a href="#" id="dropdown-toggle" >weddings <b class="caret"></b> </a> 
+        <ul id="dropdown-menu">
+          <li><a href="#">wedding 1</a></li>
+          <li><a href="#">wedding 2</a></li>
+          <li><a href="#">wedding 3</a></li>
+        </ul> 
+      </li>
+
+      <li><a href="#">moments </a></li>
+      <li><a href="contact.html">contact</a></li>
+<li><a href="https://www.theknot.com" target="_blank">plan</a></li>
+      <li><a href="about.html">about</a></li>
+    </ul>
+
+
+
+  </div>
+
+</div>
+
+<div id="contact" style="margin-top: 29%;">
+  <h1>Your Message Was Sent!</h1>
+
+</div>
+
+
+
+
+
+<footer>
+  <p>copyright © 2015 sarahhryu — all rights reserved </p>
+</footer>
+<script>
+
+  function showMeWhatIsBeingClickedOn(){
+
+    document.addEventListener('click', function(e) {
+      e = e || window.event;
+      var target = e.target || e.srcElement,
+      text = target.textContent || target.innerText;  
+      console.log(e.srcElement);
+    }, false);}
+
+    document.getElementById("dropdown-menu").style.display="none";
+
+
+    document.getElementById("dropdown-toggle").onclick = function () {
+      console.log("hey");
+      if( document.getElementById("dropdown-menu").style.display=="none"){
+        console.log("hey");
+        console.log(document.getElementById("dropdown-menu").style.display);
+        document.getElementById("dropdown-menu").style.display="block";
+}
+
+
+else
+
+  document.getElementById("dropdown-menu").style.display="none";
+
+ 
+}
+
+</script>
+
+
+
+</body>
+</html>

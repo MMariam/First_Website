@@ -1,0 +1,159 @@
+<!doctype html>
+
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- TITLE OF THE TAB -->
+  <title>Home</title>
+
+
+  <!-- LINKING TO JS SCRIPT -->
+<!-- 	<script src="animate.js"></script>
+-->	<!-- LINKING TO CSS SOURCE CODE -->
+<link href="style.css" rel="stylesheet"  type="text/css">  
+<!-- LINKING TO BOOTSTRAP -->
+<link href="https://s3.amazonaws.com/codecademy-content/courses/ltp2/css/bootstrap.min.css" rel="stylesheet"> 
+
+<link rel="shortcut icon" type="image/x-icon" href="img/flower.ico" />
+
+</head>
+
+<body>
+
+  <!-- WEBPAGE HEADER -->
+  <div class="header">
+   <!-- BOOTSTRAP CONTAINER?!?! -->
+   <div class="container">
+    <!-- LOGO -->
+    <div id="logo-icon">
+      <a href="index.html"><img src="logo.png" alt=""></a>
+    </div>
+    <!-- NAVIGATION MENU -->
+    <ul class="menu">
+
+      <li><a href="#" id="dropdown-toggle" >weddings <b class="caret"></b> </a> 
+        <ul id="dropdown-menu">
+          <li><a href="#">wedding 1</a></li>
+          <li><a href="#">wedding 2</a></li>
+          <li><a href="#">wedding 3</a></li>
+        </ul> 
+      </li>
+
+      <li><a href="#">moments </a></li>
+      <li><a href="contact.html">contact</a></li>
+<li><a href="https://www.theknot.com" target="_blank">plan</a></li>
+      <li><a href="about.html">about</a></li>
+    </ul>
+
+
+
+  </div>
+
+</div>
+
+<div class="contact">
+  <h1>Contact Us</h1>
+  <form  action="received.html" method="post" onsubmit="return validateForm();" name="myForm">
+      <div class="form-group">
+    <label for="inputFname">First Name</label>
+
+    <input type="text" placeholder="Enter First Name" name="fname" id="fname" class="form-control">
+  </div>
+    <div class="form-group">
+    <label for="inputLname">Last Name</label>
+
+    <input type="text" placeholder="Enter Last Name" name="lname" id="lname" class="form-control">
+  </div>
+    <div class="form-group">
+    <label for="inputEmail">Email</label>
+
+    <input type="email" placeholder="Enter Email Address" name="email" aria-describedby="emailHelp" id="inputEmail" class="form-control">
+
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+
+<br>
+  <div class="form-group">
+    <label for="inputMessage">Message</label>
+
+    <textarea placeholder="Type Message" name="Message" rows="4" cols="50" id="message" class="form-control"></textarea>
+  </div>
+    <button type="submit" id="btn" class="btn">Submit</button>
+
+  </form>
+</div>
+
+
+
+
+
+<footer>
+  <p>copyright © 2015 sarahhryu — all rights reserved </p>
+</footer>
+<script>
+
+  function showMeWhatIsBeingClickedOn(){
+
+    document.addEventListener('click', function(e) {
+      e = e || window.event;
+      var target = e.target || e.srcElement,
+      text = target.textContent || target.innerText;  
+      console.log(e.srcElement);
+    }, false);}
+
+    document.getElementById("dropdown-menu").style.display="none";
+
+
+    document.getElementById("dropdown-toggle").onclick = function () {
+      console.log("hey");
+      if( document.getElementById("dropdown-menu").style.display=="none"){
+        console.log("hey");
+        console.log(document.getElementById("dropdown-menu").style.display);
+        document.getElementById("dropdown-menu").style.display="block";
+//  for(let i=0; i<document.getElementById("dropdown-menu").children.length; i++)
+//    document.getElementById("dropdown-menu").children[i].style.display="block";
+// };
+}
+
+
+else
+{
+  console.log("heyy");
+
+  document.getElementById("dropdown-menu").style.display="none";
+
+   // for(let i=0; i<document.getElementById("dropdown-menu").children.length; i++)
+   // document.getElementById("dropdown-menu").children[i].style.display="none";
+ }
+
+
+
+}
+ function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  let y = document.forms["myForm"]["lname"].value;
+  let z = document.forms["myForm"]["email"].value;
+  let l = document.forms["myForm"]["message"].value;
+
+  if (x == "" || y == "" || z == "" || l == "" ) {
+    alert("Please fill in all fields");
+    return false;
+  }
+
+if(!(z.includes(".com") || z.includes(".net") || z.includes(".org") || z.includes(".co") || z.includes(".us"))){
+      alert("Invalid Email");
+
+  return false;
+}
+}
+
+
+</script>
+
+
+
+</body>
+</html>

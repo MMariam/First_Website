@@ -1,6 +1,11 @@
 
+@media (min-width: 768px){
+.container {
+    width: 100%!important;
+}
+}
 @media only screen 
-and (max-width : 1244px) {
+and  (max-width : 1200px) {
   /* Styles */
   .slide img{
     width: 100%;
@@ -12,6 +17,11 @@ and (max-width : 1244px) {
     overflow-y: scroll;
     margin-top: 80px;
   }
+
+   .contact{
+    padding-top: 23.5%;
+    width: 50%;
+   }
   .menu li,   #dropdown-menu li{
     width: 100%;
     padding-left: 40px;
@@ -30,14 +40,20 @@ and (max-width : 1244px) {
 
   #logo-icon{
    width: 140px;
-
  }
+.about-section{
+    margin-top: 25%;
+
+}
+
+.row{
+margin: 0 6.05% 5% 6.05%!important;}
 }
 
 
 /* Desktops and laptops ----------- */
 @media only screen 
-and (min-width : 1245px) {
+and (min-width : 1200px) {
  .slide img{
   width: 54%;
 }
@@ -64,6 +80,35 @@ and (min-width : 1245px) {
   right: 2%;
 }
 
+.contact
+{
+      width: 40%;
+
+  padding-top: 12%;
+}
+.about-section{
+    margin-top: 7%;
+
+}
+
+
+.container{
+width: 100%!important;
+text-align: center;
+}
+
+.row{
+  margin: 0 6.05% 2% 6.05%!important;
+}
+
+.column {
+  float: left;
+  margin: 0 2% 0 2%;
+  /*trbl*/
+  width: 25.3%;
+  /**/
+}
+
 }
 
 
@@ -73,10 +118,12 @@ and (min-width : 1245px) {
 html, body {
   margin: 0;
   height: auto;
+    box-sizing: border-box;
+     overflow-x: hidden;
+
 }
 
 .container {
-  width: 100%;
   top:0px;
   left:0px;
   position: relative;
@@ -87,7 +134,7 @@ html, body {
 /*#dropdown-menu {
   font-size: 15px;
   margin-top: 5px; 
-  min-width: 50px; 
+  min-width: 50px  
   font-family: Arial, Helvetica, sans-serif; 
    color: #898989;
    letter-spacing: 3px;
@@ -182,4 +229,107 @@ html, body {
   }
 
 
+ .contact{
+        font-family: Arial, Helvetica, sans-serif; 
+      color: #898989;
+}
 
+.contact h1{
+  color: dimgray;
+}
+
+.contact {
+  margin: 0 auto;
+}
+
+ form{
+text-align: center;
+}
+
+small{
+  float: left;
+}
+label{
+  float: left;
+}
+h1{
+  text-align: center;
+}
+
+
+
+
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+.row{
+width: 100%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+  color: #898989;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: #898989;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #898989;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+h2{
+  color: #898989!important;
+}
+
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
