@@ -4,6 +4,7 @@
     width: 100%!important;
 }
 }
+
 @media only screen 
 and  (max-width : 1200px) {
   /* Styles */
@@ -41,14 +42,25 @@ and  (max-width : 1200px) {
   #logo-icon{
    width: 140px;
  }
+
 .about-section{
-    margin-top: 25%;
+    margin-top: 23%;
 
 }
-
+/*
 .row{
-margin: 0 6.05% 5% 6.05%!important;}
+margin: 0 6.05% 5% 6.05%!important;
+}*/
+
 }
+/*
+@media only screen 
+and  (min-width : 890px) and (max-width: 1200px){
+.about-section{
+    margin-top: 15%;
+
+}
+}*/
 
 
 /* Desktops and laptops ----------- */
@@ -88,7 +100,7 @@ and (min-width : 1200px) {
 }
 .about-section{
     margin-top: 7%;
-
+    margin-bottom: 0%;
 }
 
 
@@ -97,19 +109,11 @@ width: 100%!important;
 text-align: center;
 }
 
-.row{
-  margin: 0 6.05% 2% 6.05%!important;
-}
 
-.column {
-  float: left;
-  margin: 0 2% 0 2%;
-  /*trbl*/
-  width: 25.3%;
-  /**/
-}
+
 
 }
+
 
 
 
@@ -276,9 +280,6 @@ html {
 
 
 
-.row{
-width: 100%;
-}
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -290,6 +291,9 @@ width: 100%;
   text-align: center;
   background-color: white;
   color: #898989;
+  margin-left: 0!important;
+  margin-right: 0!important;
+
 }
 
 .container {
@@ -321,15 +325,35 @@ width: 100%;
 .button:hover {
   background-color: #555;
 }
-
+.about{
+  width: 100%;
+text-align: center;
+}
 h2{
   color: #898989!important;
+  margin-top: 0!important;
 }
 
+
+.column {
+    overflow-wrap: break-word; 
+
+  float: left;
+  margin: 0 2% 0 2%;
+  /*trbl*/
+  width: 25.3%;
+  /**/
+}
+.row{
+    margin: 0 6.05% 2% 6.05%!important;
+    width: 100%;
+
+}
 
 @media screen and (max-width: 650px) {
   .column {
     width: 100%;
     display: block;
   }
+
 }
